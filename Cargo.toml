@@ -6,5 +6,8 @@ edition = "2018"
 categories = ["no-std", "rust-patterns"]
 license = "MIT"
 
+[badges]
+travis-ci = { repository = "noctune/disjoint-borrow" }
+
 [dev-dependencies]
 compiletest_rs = { version = "0.3.22", features = [ "stable" ] }
