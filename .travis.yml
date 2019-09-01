@@ -1,0 +1,19 @@
+language: rust
+rust:
+- stable
+- beta
+- nightly
+cache: cargo
+before_script:
+- rustup component add rustfmt
+script:
+- cargo fmt --all -- --check
+- cargo build
+- cargo test
+env:
+  global:
+deploy:
+  provider: cargo
+  on:
+    tags: true
+  token:
