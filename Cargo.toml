@@ -1,5 +1,6 @@
 [package]
 name = "disjoint-borrow"
+description = "Disjoint mutable borrows of slices"
 version = "0.1.0"
 authors = ["Mike Pedersen <mike@mikepedersen.dk>"]
 edition = "2018"
