@@ -7,6 +7,5 @@ fn main() {
     let (beta, b) = alpha.get(1..2);
     drop(beta);
     alpha.get(1..2);
-    //~^ cannot borrow `alpha` as mutable more than once at a time
     b[0];
 }
