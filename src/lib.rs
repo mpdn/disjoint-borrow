@@ -8,7 +8,7 @@
 //!
 //! Borrow tracking is implemented as type-level list. This has the advantage that no allocation is
 //! necessary, but also limits the number of disjoint borrows to a compile-time constant.
-//! 
+//!
 //! No-std compatible.
 //!
 //! # Example
@@ -20,7 +20,7 @@
 //! let mut ds = DisjointSlice::new(&mut array);
 //! let (mut ds, mut a) = ds.get_mut(0..2);
 //! let (_, mut b) = ds.get_mut(3..5);
-//! 
+//!
 //! a[0] *= -1;
 //! b[1] *= -1;
 //!
